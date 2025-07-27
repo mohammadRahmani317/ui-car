@@ -110,8 +110,8 @@ export default function Home() {
                             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-transform transform hover:-translate-y-1"
                         >
                             <Image
-                                src={`/images/bestseller${item}.jpg`}
-                                alt={`قطعه ${item}`}
+                                src={`/images/bestseller1.jpg`}
+                                alt={`قطعه 1`}
                                 width={400}
                                 height={300}
                                 className="w-full h-56 object-cover"
