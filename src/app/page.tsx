@@ -25,13 +25,13 @@ export default function Home() {
         >
             {/* صفحه اول - هدر و بنر */}
             <section className="snap-start h-screen w-full relative flex flex-col">
-                <header className="bg-white shadow px-6 py-4 flex items-center justify-between z-50 sticky top-0">
+                <header className="bg-white shadow px-6 py-6 flex items-center justify-between z-50 sticky top-0">
                     <Link href="#" className="flex items-center gap-1 text-gray-700 hover:text-blue-700 transition">
                         <UserIcon className="w-5 h-5"/>
                         ورود
                     </Link>
 
-                    <h1 className="text-xl md:text-2xl font-extrabold text-blue-900 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
+                    <h1 className="text-xl md:text-3xl font-extrabold text-blue-900 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
                         فروشگاه قطعات هیوندا و کیا
                     </h1>
 
@@ -56,7 +56,7 @@ export default function Home() {
                         src="/images/branding.jpg"
                         alt="بنر خودرو"
                         fill
-                        className="object-cover object-center brightness-75"
+                        className="object-cover object-center brightness-120"
                         priority
                     />
                     <div
