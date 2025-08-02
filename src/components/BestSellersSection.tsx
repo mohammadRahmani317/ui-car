@@ -8,19 +8,19 @@ import 'swiper/css';
 const bestSellers = {
     kia: [
         { id: 1, name: 'لنت ترمز جلو کیا', price: 850000, image: '/images/products/kia-brake-pad.jpg' },
-        { id: 2, name: 'فیلتر روغن کیا', price: 250000, image: '/products/kia-oil-filter.jpg' },
-        { id: 3, name: 'شمع موتور کیا', price: 450000, image: '/products/kia-spark-plug.jpg' },
-        { id: 4, name: 'فیلتر هوا کیا', price: 300000, image: '/products/kia-air-filter.jpg' },
-        { id: 5, name: 'کیت تسمه تایم کیا', price: 1200000, image: '/products/kia-timing-belt.jpg' },
-        { id: 6, name: 'رینگ چرخ کیا', price: 2200000, image: '/products/kia-wheel-rim.jpg' },
+        { id: 2, name: 'فیلتر روغن کیا', price: 250000, image: '/images/products/kia-oil-filter.jpg' },
+        { id: 3, name: 'شمع موتور کیا', price: 450000, image: '/images/products/kia-spark-plug.jpg' },
+        { id: 4, name: 'فیلتر هوا کیا', price: 300000, image: '/images/products/kia-air-filter.jpg' },
+        { id: 5, name: 'کیت تسمه تایم کیا', price: 1200000, image: '/images/products/kia-timing-belt.jpg' },
+        { id: 6, name: 'رینگ چرخ کیا', price: 2200000, image: '/images/products/kia-wheel-rim.jpg' },
     ],
     hyundai: [
-        { id: 1, name: 'لنت ترمز جلو هیوندای', price: 900000, image: '/products/hyundai-brake-pad.jpg' },
-        { id: 2, name: 'فیلتر هوا هیوندای', price: 300000, image: '/products/hyundai-air-filter.jpg' },
-        { id: 3, name: 'باتری هیوندای', price: 1500000, image: '/products/hyundai-battery.jpg' },
-        { id: 4, name: 'کیت تسمه تایم هیوندای', price: 1300000, image: '/products/hyundai-timing-belt.jpg' },
-        { id: 5, name: 'رینگ چرخ هیوندای', price: 2100000, image: '/products/hyundai-wheel-rim.jpg' },
-        { id: 6, name: 'شمع موتور هیوندای', price: 400000, image: '/products/hyundai-spark-plug.jpg' },
+        { id: 1, name: 'لنت ترمز جلو هیوندای', price: 900000, image: '/images/products/hyundai-brake-pad.jpg' },
+        { id: 2, name: 'فیلتر هوا هیوندای', price: 300000, image: '/images/products/hyundai-air-filter.jpg' },
+        { id: 3, name: 'باتری هیوندای', price: 1500000, image: '/images/products/hyundai-battery.jpg' },
+        { id: 4, name: 'کیت تسمه تایم هیوندای', price: 1300000, image: '/images/products/hyundai-timing-belt.jpg' },
+        { id: 5, name: 'رینگ چرخ هیوندای', price: 2100000, image: '/images/products/hyundai-wheel-rim.jpg' },
+        { id: 6, name: 'شمع موتور هیوندای', price: 400000, image: '/images/products/hyundai-spark-plug.jpg' },
     ],
 };
 
