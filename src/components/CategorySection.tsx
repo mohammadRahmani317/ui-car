@@ -1,5 +1,5 @@
-// src/components/CategorySection.tsx
 'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,7 +7,7 @@ const categories = [
     {
         name: 'قطعات کیا',
         slug: 'kia',
-        image: '/images/kia.jpg', // مطمئن شو که این فایل در public/images هست
+        image: '/images/kia.jpg', // مطمئن شو این تصویر در مسیر public/images هست
     },
     {
         name: 'قطعات هیوندای',
@@ -27,7 +27,7 @@ export default function CategorySection() {
                     {categories.map((cat) => (
                         <Link
                             key={cat.slug}
-                            href={`/products/${cat.slug}`}
+                            href={`/products?brand=${cat.slug}`}
                             className="group relative block rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300"
                         >
                             <div className="relative w-full h-72 md:h-96">
@@ -37,12 +37,10 @@ export default function CategorySection() {
                                     fill
                                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
-                                <div
-                                    className="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent text-white text-center py-4">
-              <span
-                  className="text-xl md:text-2xl font-extrabold tracking-wide drop-shadow-md transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-2xl group-hover:text-white/90 inline-block">
-                {cat.name}
-              </span>
+                                <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent text-white text-center py-4">
+                  <span className="text-xl md:text-2xl font-extrabold tracking-wide drop-shadow-md transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-2xl group-hover:text-white/90 inline-block">
+                    {cat.name}
+                  </span>
                                 </div>
                             </div>
                         </Link>
@@ -50,7 +48,5 @@ export default function CategorySection() {
                 </div>
             </div>
         </section>
-
-
     );
 }

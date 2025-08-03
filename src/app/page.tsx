@@ -4,7 +4,10 @@ import TopBar from '../components/TopBar';
 import Header from '../components/Header';
 import CategoryBoxes from '../components/CategorySection';
 import BestSellersSection from '../components/BestSellersSection';
-import SearchAndWhyUsSection from '../components/SearchAndWhyUsSection';
+import WhyUsSection from "@/components/WhyUsSection";
+import ContactBanner from "@/components/ContactBanner";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import BlogSection from "@/components/BlogSection";
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -14,7 +17,10 @@ export default function Home() {
             <Header />
             <CategoryBoxes />
             <BestSellersSection />
-            <SearchAndWhyUsSection />
+            <WhyUsSection />
+            <TestimonialsSection />
+            <BlogSection />
+            <ContactBanner />
             <Footer />
         </div>
     );

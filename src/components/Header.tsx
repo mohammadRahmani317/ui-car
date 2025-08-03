@@ -17,14 +17,16 @@ export default function Header() {
                 />
             </Link>
 
-            {/* سرچ‌بار */}
-            <div className="flex-1 mx-6 max-w-xl relative">
+            {/* سرچ‌بار جدید */}
+            <div className="flex-1 mx-6 max-w-4xl relative">
                 <input
                     type="text"
                     placeholder="جستجو بر اساس کد یا نام قطعه..."
-                    className="w-full border border-gray-300 rounded-full py-2 px-4 pr-10 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
+                    className="w-full border border-gray-200 rounded-xl py-5 px-5 pr-14 bg-gray-50 shadow-sm text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-400 transition-all"
                 />
-                <MagnifyingGlassIcon className="w-5 h-5 text-gray-400 absolute right-3 top-2.5" />
+                <MagnifyingGlassIcon
+                    className="w-7 h-7 text-red-600 absolute right-3 top-1/2 transform -translate-y-1/2"
+                />
             </div>
 
             {/* ورود / عضویت */}
