@@ -1,7 +1,9 @@
 export default function Footer() {
     return (
-        <footer className="bg-blue-50 text-center text-sm text-gray-600 py-4 border-t snap-start flex-shrink-0">
-            © {new Date().getFullYear()} فروشگاه قطعات هیوندا و کیا. تمامی حقوق محفوظ است.
+        <footer className="bg-white border-t border-gray-200 text-center text-sm text-gray-700 py-4">
+            <p>
+                © {new Date().getFullYear()} <span className="font-semibold text-red-600">فروشگاه قطعات هیوندا و کیا</span>. تمامی حقوق محفوظ است.
+            </p>
         </footer>
     );
-} 
+}

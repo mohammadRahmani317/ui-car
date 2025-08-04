@@ -1,5 +1,6 @@
 import TopBar from '@/components/TopBar';
 import Header from '@/components/Header';
+import Footer from "@/components/Footer";
 import { Suspense } from 'react';
 import ProductsClient from './ProductsClient';
 
@@ -15,6 +16,7 @@ export default function ProductsPage() {
                     <ProductsClient />
                 </Suspense>
             </main>
+            <Footer />
         </>
     );
 }

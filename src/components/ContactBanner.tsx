@@ -12,7 +12,7 @@ export default function ContactBanner() {
                 </div>
                 <div className="flex items-center gap-3 text-lg font-semibold">
                     <PhoneCall className="w-6 h-6" />
-                    <span>۰۹۱۹-۹۰۹-۰۹۸۹</span>
+                    <span>۰۹۱۹-۹۰۹۰-۹۸۹</span>
                 </div>
             </div>
         </section>
