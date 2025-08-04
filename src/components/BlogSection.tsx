@@ -23,20 +23,21 @@ const posts = [
 
 export default function BlogSection() {
     return (
-        <section className="w-full py-12 bg-white">
-            <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">
                     از بلاگ ما بخوانید
                 </h2>
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {posts.map((post, index) => (
                         <Link
+                            key={index}
+                            href={post.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={post.link}
-                            key={index}
-                            className="group rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-300">
-                            <div className="relative w-full h-48">
+                            className="group rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-300"
+                        >
+                            <div className="relative w-full h-44 sm:h-48">
                                 <Image
                                     src={post.image}
                                     alt={post.title}
@@ -45,7 +46,7 @@ export default function BlogSection() {
                                 />
                             </div>
                             <div className="p-4 bg-white">
-                                <h3 className="text-gray-800 font-semibold text-lg group-hover:text-red-600 transition">
+                                <h3 className="text-gray-800 font-medium sm:font-semibold text-base sm:text-lg group-hover:text-red-600 transition">
                                     {post.title}
                                 </h3>
                             </div>

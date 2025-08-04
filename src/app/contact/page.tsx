@@ -1,36 +1,37 @@
 'use client';
 
-import {EnvelopeIcon, MapPinIcon, PhoneIcon,} from '@heroicons/react/24/outline';
+import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 export default function ContactPage() {
     return (
-        <main
-            className="min-h-[calc(100vh-60px)] bg-gradient-to-br from-gray-50 to-white px-4 py-8 flex flex-col justify-center items-center">
-            <div
-                className="w-full max-w-4xl bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <main className="min-h-[calc(100vh-60px)] bg-gradient-to-br from-gray-50 to-white px-4 py-8 flex flex-col items-center">
+            <div className="w-full max-w-5xl bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-2xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 {/* اطلاعات تماس و نقشه */}
                 <div className="flex flex-col gap-6 justify-center">
-                    <h1 className="text-2xl font-bold text-gray-800 mb-2 text-center lg:text-right">تماس با ما</h1>
-                    <div className="flex items-center gap-2 text-gray-700">
-                        <PhoneIcon className="w-5 h-5 text-red-500"/>
+                    <h1 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 text-center lg:text-right">تماس با ما</h1>
+
+                    <div className="flex items-center gap-2 text-gray-700 text-sm sm:text-base">
+                        <PhoneIcon className="w-5 h-5 text-red-500" />
                         <span>۰۹۱۹۹۰۹۰۹۸۹</span>
                         <span>۰۹۱۹۹۰۹۰۹۸۹</span>
                     </div>
-                    <div className="flex items-center gap-2 text-gray-700">
-                        <EnvelopeIcon className="w-5 h-5 text-blue-500"/>
+
+                    <div className="flex items-center gap-2 text-gray-700 text-sm sm:text-base">
+                        <EnvelopeIcon className="w-5 h-5 text-blue-500" />
                         <span>info@example.com</span>
                     </div>
-                    <div className="flex items-center gap-2 text-gray-700">
-                        <MapPinIcon className="w-5 h-5 text-green-500"/>
+
+                    <div className="flex items-center gap-2 text-gray-700 text-sm sm:text-base">
+                        <MapPinIcon className="w-5 h-5 text-green-500" />
                         <span>تهران، خیابان آزادی</span>
                     </div>
 
-                    <div className="rounded-xl overflow-hidden shadow-md mt-4">
+                    <div className="rounded-xl overflow-hidden shadow-md mt-2 sm:mt-4">
                         <iframe
                             src="https://maps.google.com/maps?q=35.6889915,51.4265473&z=17&hl=fa&output=embed"
-                            className="w-full h-56 border-none"
+                            className="w-full h-52 sm:h-56 border-none"
                             loading="lazy"
-                            title="لوکیشن لوازم یدکی رنو pk"
+                            title="لوکیشن فروشگاه"
                         />
                     </div>
                 </div>
@@ -41,7 +42,7 @@ export default function ContactPage() {
                         <label className="block mb-1 font-semibold text-gray-700">نام شما</label>
                         <input
                             type="text"
-                            className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+                            className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-500"
                             placeholder="مثلاً علی رضایی"
                         />
                     </div>
@@ -49,7 +50,7 @@ export default function ContactPage() {
                         <label className="block mb-1 font-semibold text-gray-700">شماره تماس</label>
                         <input
                             type="tel"
-                            className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+                            className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-500"
                             placeholder="مثلاً ۰۹۱۹۹۰۹۰۹۸۹"
                         />
                     </div>
@@ -57,7 +58,7 @@ export default function ContactPage() {
                         <label className="block mb-1 font-semibold text-gray-700">پیام شما</label>
                         <textarea
                             rows={4}
-                            className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+                            className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-500"
                             placeholder="پیام خود را اینجا بنویسید..."
                         />
                     </div>
@@ -69,10 +70,12 @@ export default function ContactPage() {
                     </button>
                 </form>
             </div>
-            <div className="mt-8">
-                {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-                <a href="/"
-                   className="inline-flex items-center gap-2 border border-red-600 text-red-600 px-6 py-2 rounded-lg font-semibold hover:bg-red-50 transition">
+
+            <div className="mt-8 text-center">
+                <a
+                    href="/"
+                    className="inline-flex items-center gap-2 border border-red-600 text-red-600 px-5 sm:px-6 py-2 rounded-lg font-semibold hover:bg-red-50 transition text-sm sm:text-base"
+                >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
                          viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}

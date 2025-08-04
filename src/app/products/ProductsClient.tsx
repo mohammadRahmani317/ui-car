@@ -28,7 +28,7 @@ function BrandDropdown({
     };
 
     return (
-        <div className="relative w-full max-w-xs mx-auto">
+        <div className="relative w-full max-w-xs mx-auto sm:mx-0">
             <div
                 className="flex items-center justify-between border border-gray-300 rounded-md px-3 py-2 bg-white shadow-sm cursor-pointer hover:border-gray-400"
                 onClick={() => setOpen(!open)}
@@ -38,7 +38,7 @@ function BrandDropdown({
             </div>
 
             {open && (
-                <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded-md mt-1 max-h-60 overflow-y-auto shadow-lg animate-fade-in">
+                <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded-md mt-1 max-h-60 overflow-y-auto shadow-lg animate-fade-in text-sm">
                     {options.map((opt) => (
                         <li
                             key={opt}
@@ -75,10 +75,12 @@ export default function ProductsClient() {
             : productsMock.filter((p) => p.brand === filterBrand);
 
     return (
-        <>
-            <BrandDropdown selected={filterBrand} onChange={(val) => setFilterBrand(val)} />
+        <div>
+            <div className="mb-4 flex justify-center sm:justify-start">
+                <BrandDropdown selected={filterBrand} onChange={(val) => setFilterBrand(val)} />
+            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
                 {filteredProducts.map((product) => (
                     <ProductCard
                         key={product.id}
@@ -91,6 +93,6 @@ export default function ProductsClient() {
             {selectedProduct && (
                 <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
             )}
-        </>
+        </div>
     );
 }

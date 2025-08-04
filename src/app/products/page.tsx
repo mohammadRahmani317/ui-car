@@ -9,10 +9,12 @@ export default function ProductsPage() {
         <>
             <TopBar />
             <Header />
-            <main className="max-w-6xl mx-auto p-4 mt-6">
-                <h1 className="text-3xl font-bold mb-6 text-center">لیست محصولات</h1>
+            <main className="max-w-6xl mx-auto px-4 sm:px-6 mt-6">
+                <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center sm:text-right text-gray-800">
+                    لیست محصولات
+                </h1>
 
-                <Suspense fallback={<div>در حال بارگذاری محصولات...</div>}>
+                <Suspense fallback={<div className="text-center py-6 text-gray-600">در حال بارگذاری محصولات...</div>}>
                     <ProductsClient />
                 </Suspense>
             </main>
