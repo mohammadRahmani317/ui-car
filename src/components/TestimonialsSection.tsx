@@ -1,6 +1,6 @@
 'use client';
 
-import { StarIcon } from 'lucide-react';
+import {StarIcon} from 'lucide-react';
 
 const testimonials = [
     {
@@ -28,10 +28,11 @@ export default function TestimonialsSection() {
                     {testimonials.map((t, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-xl shadow p-6 text-center flex flex-col items-center gap-4"
-                        >
-                            <StarIcon className="w-6 h-6 text-yellow-500" />
-                            <p className="text-gray-700 text-sm leading-relaxed">"{t.comment}"</p>
+                            className="bg-white rounded-xl shadow p-6 text-center flex flex-col items-center gap-4">
+                            <StarIcon className="w-6 h-6 text-yellow-500"/>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                                {`"${t.comment}"`}
+                            </p>
                             <span className="text-red-600 font-semibold text-sm">{t.name}</span>
                         </div>
                     ))}

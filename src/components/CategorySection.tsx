@@ -7,7 +7,7 @@ const categories = [
     {
         name: 'قطعات کیا',
         slug: 'kia',
-        image: '/images/kia.jpg', // مطمئن شو این تصویر در مسیر public/images هست
+        image: '/images/kia.jpg',
     },
     {
         name: 'قطعات هیوندای',
