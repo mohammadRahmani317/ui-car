@@ -1,28 +1,34 @@
 'use client';
 
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+
+
 
 export default function ContactPage() {
     return (
-        <main className="min-h-[calc(100vh-60px)] bg-gradient-to-br from-gray-50 to-white px-4 py-8 flex flex-col items-center">
-            <div className="w-full max-w-5xl bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-2xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+        <main
+            className="min-h-[calc(100vh-60px)] bg-gradient-to-br from-gray-50 to-white px-4 py-8 flex flex-col items-center">
+            <div
+                className="w-full max-w-5xl bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-2xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 {/* اطلاعات تماس و نقشه */}
                 <div className="flex flex-col gap-6 justify-center">
-                    <h1 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 text-center lg:text-right">تماس با ما</h1>
+                    <h1 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 text-center lg:text-right">تماس با
+                        ما</h1>
 
                     <div className="flex items-center gap-2 text-gray-700 text-sm sm:text-base">
-                        <PhoneIcon className="w-5 h-5 text-red-500" />
+                        <PhoneIcon className="w-5 h-5 text-red-500"/>
                         <span>۰۹۱۹۹۰۹۰۹۸۹</span>
                         <span>۰۹۱۹۹۰۹۰۹۸۹</span>
                     </div>
 
                     <div className="flex items-center gap-2 text-gray-700 text-sm sm:text-base">
-                        <EnvelopeIcon className="w-5 h-5 text-blue-500" />
+                        <EnvelopeIcon className="w-5 h-5 text-blue-500"/>
                         <span>info@example.com</span>
                     </div>
 
                     <div className="flex items-center gap-2 text-gray-700 text-sm sm:text-base">
-                        <MapPinIcon className="w-5 h-5 text-green-500" />
+                        <MapPinIcon className="w-5 h-5 text-green-500"/>
                         <span>تهران، خیابان آزادی</span>
                     </div>
 
@@ -72,7 +78,7 @@ export default function ContactPage() {
             </div>
 
             <div className="mt-8 text-center">
-                <a
+                <Link
                     href="/"
                     className="inline-flex items-center gap-2 border border-red-600 text-red-600 px-5 sm:px-6 py-2 rounded-lg font-semibold hover:bg-red-50 transition text-sm sm:text-base"
                 >
@@ -84,7 +90,7 @@ export default function ContactPage() {
                               d="M9 22V12h6v10"/>
                     </svg>
                     بازگشت به صفحه اصلی
-                </a>
+                </Link>
             </div>
         </main>
     );

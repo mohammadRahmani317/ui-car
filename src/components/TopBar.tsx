@@ -10,8 +10,8 @@ import { FaWhatsapp, FaInstagram, FaPhone } from 'react-icons/fa';
 
 export default function TopBar() {
     return (
-        <div className="bg-gray-100 text-gray-700 text-[11px] sm:text-xs md:text-sm px-3 sm:px-4 py-2">
-            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
+        <div className="bg-gray-100 text-gray-700 text-[11px] sm:text-xs md:text-sm px-3 sm:px-6 py-2">
+            <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
                 {/* اطلاعات تماس و شبکه اجتماعی */}
                 <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 sm:gap-4">
                     <a href="tel:09199090989" className="flex items-center gap-1 hover:text-blue-600 transition">

@@ -1,5 +1,5 @@
-import { Product } from '@/types/product';
-import { formatPrice } from '@/lib/utils';
+import {Product} from '@/types/product';
+import Image from 'next/image';
 
 export default function ProductCard({
                                         product,
@@ -13,7 +13,7 @@ export default function ProductCard({
             className="rounded-xl p-4 shadow-md hover:shadow-xl transition cursor-pointer bg-white"
             onClick={onClick}
         >
-            <img
+            <Image
                 src={product.image}
                 alt={product.name}
                 className="w-full h-40 object-contain mb-4"
