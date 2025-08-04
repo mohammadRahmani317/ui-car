@@ -23,13 +23,14 @@ export default function BestSellersSection() {
                     محصولات پرفروش
                 </h2>
 
-                <div className="flex justify-center mb-8 space-x-6 rtl">
+                {/* دکمه‌های برند */}
+                <div className="flex flex-wrap justify-center mb-8 gap-4">
                     {(['kia', 'hyundai'] as const).map((brand) => (
                         <button
                             key={brand}
                             onClick={() => setActiveBrand(brand)}
-                            className={`px-6 py-2 rounded-lg font-semibold transition
-                ${
+                            className={`px-6 py-2 rounded-lg font-semibold transition text-sm md:text-base
+                                ${
                                 activeBrand === brand
                                     ? 'bg-red-600 text-white shadow-xl'
                                     : 'bg-white text-gray-700 hover:bg-red-100'
@@ -40,6 +41,7 @@ export default function BestSellersSection() {
                     ))}
                 </div>
 
+                {/* اسلایدر محصولات */}
                 <Swiper
                     modules={[Autoplay]}
                     spaceBetween={20}
@@ -59,7 +61,7 @@ export default function BestSellersSection() {
                                 onClick={() => setSelectedProduct(product)}
                                 className="bg-white rounded-xl shadow-md overflow-hidden transition-shadow duration-300 cursor-pointer hover:shadow-2xl hover:scale-[1.03] transform"
                             >
-                                <div className="relative w-full h-48">
+                                <div className="relative w-full h-40 sm:h-48 md:h-56">
                                     <Image
                                         src={product.image}
                                         alt={product.name}
@@ -68,10 +70,10 @@ export default function BestSellersSection() {
                                     />
                                 </div>
                                 <div className="p-4 text-center">
-                                    <h3 className="text-lg font-semibold text-gray-800">
+                                    <h3 className="text-base md:text-lg font-semibold text-gray-800">
                                         {product.name}
                                     </h3>
-                                    <p className="mt-2 text-red-600 font-bold">
+                                    <p className="mt-2 text-red-600 text-sm md:text-base font-bold">
                                         برای تهیه محصول لطفاً تماس بگیرید
                                     </p>
                                 </div>
@@ -80,6 +82,7 @@ export default function BestSellersSection() {
                     ))}
                 </Swiper>
 
+                {/* مودال محصول */}
                 {selectedProduct && (
                     <ProductModal
                         product={selectedProduct}
